@@ -15,5 +15,5 @@ jobs:
           node-version: 20
           registry-url: 'https://www.npmjs.com'
       - run: npm publish
-      - env:
+        env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
